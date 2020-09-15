@@ -23,4 +23,8 @@ class School
     ROSTER[grade]
   end
   
+  def sort
+    
+  end
+  
 end
