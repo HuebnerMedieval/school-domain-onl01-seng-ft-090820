@@ -2,25 +2,25 @@
 
 class School
   
-  ROSTER = {}
+  @@roster = {}
   
   def initialize(name)
     @name = name
   end
   
   def roster
-    ROSTER
+    @@roster
   end
   
   def add_student(name, grade)
-    if !ROSTER[grade]
-      ROSTER[grade] = []
+    if !@@roster[grade]
+      @@roster[grade] = []
     end
-    ROSTER[grade] << name
+    @@roster[grade] << name
   end
   
   def grade(grade)
-    ROSTER[grade]
+    @@roster[grade]
   end
   
   def sort
