@@ -24,7 +24,7 @@ class School
   end
   
   def sort
-    ROSTER.
+    ROSTER.map! {|grade, array| array.sory}
   end
   
 end
